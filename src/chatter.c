@@ -191,8 +191,8 @@ _Noreturn void start_event_listener(Display* display, const char* mappings_file)
         XNextEvent(display, &event);
         if (event.type == key_press_type || event.type == key_release_type) {
             XDeviceKeyEvent* key = (XDeviceKeyEvent*) &event;
-            printf("key %s %d\n", (event.type == key_release_type) ? "release" : "press  ",
-                   key->keycode);
+//            printf("key %s %d\n", (event.type == key_release_type) ? "release" : "press  ",
+//                   key->keycode);
             if (event.type == key_press_type) {
                 Window focused_window;
                 int revert;
