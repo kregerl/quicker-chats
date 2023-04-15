@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/rl_quick_chatter.dir/main.c.o CMakeFiles/rl_quick_chatter.dir/chatter.c.o -o rl_quick_chatter  -lX11 -lXext -lXi 

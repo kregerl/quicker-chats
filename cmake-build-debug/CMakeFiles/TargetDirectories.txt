@@ -1,3 +1,0 @@
-/home/loucas/CLionProjects/rl-quick-chatter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/loucas/CLionProjects/rl-quick-chatter/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/loucas/CLionProjects/rl-quick-chatter/cmake-build-debug/CMakeFiles/quicker_chats.dir
