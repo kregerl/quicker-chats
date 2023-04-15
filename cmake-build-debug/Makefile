@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /home/loucas/AppImage/clion-2021.1/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /home/loucas/AppImage/clion-2021.1/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/loucas/CLionProjects/rl-quick-chatter/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/loucas/AppImage/clion-2021.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/loucas/AppImage/clion-2021.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rl_quick_chatter
+# Target rules for targets named quicker_chats
 
 # Build rule for target.
-rl_quick_chatter: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rl_quick_chatter
-.PHONY : rl_quick_chatter
+quicker_chats: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quicker_chats
+.PHONY : quicker_chats
 
 # fast build rule for target.
-rl_quick_chatter/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rl_quick_chatter.dir/build.make CMakeFiles/rl_quick_chatter.dir/build
-.PHONY : rl_quick_chatter/fast
+quicker_chats/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quicker_chats.dir/build.make CMakeFiles/quicker_chats.dir/build
+.PHONY : quicker_chats/fast
 
 chatter.o: chatter.c.o
 .PHONY : chatter.o
 
 # target to build an object file
 chatter.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rl_quick_chatter.dir/build.make CMakeFiles/rl_quick_chatter.dir/chatter.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quicker_chats.dir/build.make CMakeFiles/quicker_chats.dir/chatter.c.o
 .PHONY : chatter.c.o
 
 chatter.i: chatter.c.i
@@ -142,7 +142,7 @@ chatter.i: chatter.c.i
 
 # target to preprocess a source file
 chatter.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rl_quick_chatter.dir/build.make CMakeFiles/rl_quick_chatter.dir/chatter.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quicker_chats.dir/build.make CMakeFiles/quicker_chats.dir/chatter.c.i
 .PHONY : chatter.c.i
 
 chatter.s: chatter.c.s
@@ -150,7 +150,7 @@ chatter.s: chatter.c.s
 
 # target to generate assembly for a file
 chatter.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rl_quick_chatter.dir/build.make CMakeFiles/rl_quick_chatter.dir/chatter.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quicker_chats.dir/build.make CMakeFiles/quicker_chats.dir/chatter.c.s
 .PHONY : chatter.c.s
 
 main.o: main.c.o
@@ -158,7 +158,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rl_quick_chatter.dir/build.make CMakeFiles/rl_quick_chatter.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quicker_chats.dir/build.make CMakeFiles/quicker_chats.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -166,7 +166,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rl_quick_chatter.dir/build.make CMakeFiles/rl_quick_chatter.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quicker_chats.dir/build.make CMakeFiles/quicker_chats.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -174,7 +174,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rl_quick_chatter.dir/build.make CMakeFiles/rl_quick_chatter.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quicker_chats.dir/build.make CMakeFiles/quicker_chats.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -185,7 +185,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... rl_quick_chatter"
+	@echo "... quicker_chats"
 	@echo "... chatter.o"
 	@echo "... chatter.i"
 	@echo "... chatter.s"
