@@ -32,6 +32,12 @@ int main(int argc, char** argv) {
         }
     }
 
+    if (!mappings_path) {
+        fprintf(stderr, "Expected a mappings file path\n");
+        printf("%s\n", usage);
+        exit(EXIT_FAILURE);
+    }
+
     init(id, mappings_path);
     return EXIT_SUCCESS;
 }

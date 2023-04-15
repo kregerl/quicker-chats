@@ -147,6 +147,7 @@ void read_mappings(Display* display, char** mappings, const char* mappings_file)
     FILE* file;
     file = fopen(mappings_file, "r");
     if (file == NULL) {
+        perror("Error opening file");
         exit(EXIT_FAILURE);
     }
 
