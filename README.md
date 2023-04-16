@@ -13,7 +13,7 @@ cmake CMakeLists.txt && make
 ./quicker_chats
 ```
 
-###Usage
+### Usage
 ```shell
 USAGE: quickerchat [OPTIONS] FILE
   FILE should be a mappings file for mapping keys to strings.
